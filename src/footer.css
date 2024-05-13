@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footer_con{
+    /* background-color: darkgoldenrod; */
+    background-color: white;
+    padding-top: 40px;
+}
+.footer_sub_con{
+    position: relative;
+}
+.contact_con{
+    /* background-color: darkgreen; */
+    background: linear-gradient(90deg, #0045FF 0%, #BD29F2 100%);
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-wrap: wrap;
+    top:-30px;
+    left: 9%;
+    padding: 0px 20px;
+    border-radius:10px;
+}
+.contact_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: brown;  */
+    /* width: 25%; */
+    padding: 5px;
+    /* position: absolute; */
+    padding-left: 15px;
+   
+    
+
+}
+.contact_icon{
+    background-color: rgb(250, 253, 253);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 14px;
+    color:blue;
+}
+.contact_name{
+    text-align: left;
+    padding: 0px 10px;
+    color: white;
+   
+}
+.contact_button BUTTON{
+    background-color: rgb(248, 250, 250);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #0045FF;
+}
+
+.footer_hole_sub_con{
+    /* background-color: cornflowerblue; */
+    background: rgba(34, 44, 77, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 70px;
+    flex-wrap: wrap;
+    color: white;
+    
+}
+
+.footer_p{
+    padding-top: 40px;
+    background: rgba(34, 44, 77, 1);
+    color: white;
+}
+.footer_box{
+   padding: 10px;
+}
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+    .footer_con{
+
+        padding-top: 250px;
+    }
+    .footer_hole_sub_con{
+        padding-top: 150px;
+
+
+
+
+    }
+    .contact_con{
+       
+        flex-wrap: wrap;
+        top:-20%;
+        left: 3%;
+        padding: 10px;
+        /* display: none; */
+        
+       
+    }
+   .email_h6{
+    font-size: 13px;
+   }
+   .contact_box{
+    padding-bottom: 30px;
+    
+
+   }
+   .contact_name{
+    font-size: 13px;
+   }
+   .contact_con{
+    /* background-color: darkgreen; */
+    background: linear-gradient(90deg, #0045FF 0%, #BD29F2 100%);
+    width: 95%;
+   }
+
+   
+
+
+
+}

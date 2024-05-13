@@ -1,0 +1,258 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.feedback_sub_con{
+    background-image: url(./review.jpg);
+    
+    background: linear-gradient(180deg, #0045FF 0%, #BD29F2 100%);
+    padding: 20px 0px;
+    /* gap:20px; */
+}
+
+.feedback_box{
+    background-color: white;
+    width: 25%;
+    /* height: 90%; */
+    padding: 20px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+}
+.feedback_sub_con h6::after{
+    content: " ⸻ ";
+    font-weight: bold;
+    color: #fcfdfd;
+
+}
+
+.feedback_sub_con h6::before{
+    content: " ⸻ ";
+    font-weight: bold;
+    color: #fbfcfd;
+
+}
+.feedback_sub_con h6 {
+    color: white;
+}
+
+.feedback_sub_con h2 {
+    color: white;
+
+}
+.feedback_icon{
+    font-size: 50px;
+    color:#0045BC;
+}
+.feedback_icon h5{
+    color:gray;
+}
+.feedback_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.feedback_img img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.feedback_img_name{
+    /* padding-left: 20px; */
+    text-align: left;
+}
+
+.feedback_img_name h6:nth-child(2){
+    color:#0045BC;
+}
+.feedback_img_name h6:nth-child(1){
+    padding-left: 5px;
+    color: black;
+    
+}
+.feedback_slider_sub_con{
+    /* background-color: rgb(204, 248, 9); */
+   margin:0px 40px;
+   padding: 50px;
+}
+.feedback_box{
+    /* margin: 0px 40px; */
+    /* padding: 20px; */
+
+}
+.slick-slide > div{
+    margin:0px 20px;
+    /* background-color: rgb(250, 2, 188); */
+}
+.feedback_slider_con2{
+    display: none;
+}
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+    .slick-slide > div{
+       margin: 0px;
+        width: 100%;
+        /* background-color: rgb(250, 2, 188); */
+        display: flex;
+        flex-direction: column;
+        /* display: none; */
+    }
+    .slick-slide{
+        width: 100%;
+    }
+
+    .feedback_slider_sub_con{
+        /* background-color: rgb(204, 248, 9); */
+       margin:0px 10px;
+       padding: 10px;
+    }
+
+    .feedback_box{
+        width: 100%;
+
+
+    }
+    .feedback_slider_con2{
+        display: block;
+
+    } 
+    .feedback_slider_sub_con .feedback_box{
+        margin: 20px 0px;
+       
+        
+    }
+    .feedback_slider_con .feedback_slider_sub_con:nth-child(1){
+        display: none;
+
+    }
+    
+
+   
+    
+
+}
+/* news */
+
+.news_sub_con{
+    /* background-color: darkorange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0px;  
+}
+
+.news_box_con{
+   
+    /* background-color: cyan; */
+    padding: 20px 0px;
+}
+.news_word{
+    /* background-color: cadetblue; */
+    width: 70%;
+}
+
+.news_box_con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.news_box{
+    /* background-color:white; */
+    border-radius: 10px;
+    width: 20%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   
+}
+.news_img{
+    position: relative;
+    border-radius: 10px;
+}
+
+.news_img  img{
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.news_img button{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #0045FF 0%, #BD29F2 100%);
+    font-size: 10px;
+    padding: 3px 6px;
+    border: none;
+    color: white;
+
+}
+.news_box{
+    text-align: left;
+}
+
+
+
+.news_box_con h3{
+    padding: 5px 20px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.news_box_con h6{
+    
+    padding: 0px 20px;
+    padding-bottom: 30px;
+}
+
+.news_word h6{
+    color: #0045BC;
+}
+
+.news_word h6::after{
+    content: " ⸻ ";
+    font-weight: bold;
+    color: #0045BC;
+
+}
+
+.news_word h6::before{
+    content: " ⸻ ";
+    font-weight: bold;
+    color:#0045BC;
+
+}
+.news_word span:nth-child(1){
+    color: #0045BC;
+
+}
+.news_word span:nth-child(2){
+    color: #ac1dee;
+
+}
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+
+    .news_word{
+        /* background-color: cadetblue; */
+        width: 90%;
+    }
+
+    .news_box_con{
+        
+        gap: 0px;
+        
+    }
+    .news_box{
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+
+}

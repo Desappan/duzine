@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contact_home_con{
+    /* height: 100vh; */
+    /* background-color: brown; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.contact_one{
+    height: 200px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image:url(./contact_img.jpg) ;
+    color: white;
+}
+.contact_two{
+    /* background-color: rgb(30, 210, 201); */
+    width:40%;
+    padding: 20px 0px;
+}
+.contact_two h6::after{
+    content: "⸻";
+    font-weight: bold;
+    color: #0045BC;
+
+}
+
+.contact_two h6::before{
+    content: "⸻";
+    font-weight: bold;
+    color: #0045BC;
+
+}
+.contact_two h6{
+    color: #0045BC ;
+}
+.contact_two p{
+    font-size: 14px;
+}
+.form_con{
+    display: flex;
+    /* background-color: darkgreen; */
+    width: 80%;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.form_one{
+    width: 50%;
+    /* background-color: rgb(138, 255, 127); */
+    background-color: white;
+    text-align: left;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /* padding-left: 10px; */
+    padding:10px 10px ;
+    border-radius: 10px;
+}
+
+.form_input{
+    /* background-color: blueviolet; */
+     
+    width: 90%;
+   
+    
+}
+
+
+.form_input input{
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    width: 45%;
+   
+}
+.command{
+    width: 100%;
+    height: 80%;
+}
+.command::placeholder{
+    /* color: brown; */
+    width: 100%;
+    
+}
+.form_one h6{
+    font-size: 15px;
+}
+.form_one button{
+    padding: 10px 20px;
+    background: linear-gradient(102.99deg, #0045FF 0%, #BD29F2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+
+}
+.checkbox{
+    padding: 10px 0px;
+}
+
+.form_two_call{
+    background-color: white;
+    /* height: 200px;
+    width: 200px; */
+    display: flex;
+    padding: 10px 30px 20px 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+.con_icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #0045FF 0%, #BD29F2 100%);
+    padding: 10px;
+    color: white;
+
+}
+.form_two_call_text{
+    text-align: left;
+    padding-left: 10px;
+}
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+    .form_one{
+        width: 100%;
+
+    }
+    .contact_two{
+        width: 75%;
+    }
+    .form_two_call {
+        padding: 2px;
+
+    }
+    .form_two_call_text h6{
+        font-size: 13px;
+    }
+    .form_input input {
+       
+        width: 100%;
+    }
+    
+
+
+}

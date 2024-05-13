@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Service_container{
+    /* background-color: cyan; */
+    background-image: url(./Group\ 162547.png);
+    /* height: 100vh; */
+}
+.service_sub_con{
+    /* background-color:red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+.service_first_con{
+    width: 56%;
+    /* background-color: rgb(17, 0, 255); */
+}
+.service_first_con h6{
+    color: #0045BC;
+    /* font-size: 0px; */
+}
+.service_first_con h5{
+    padding-top: 10px;
+    font-size: 19px;
+    /* width:80% ; */
+    /* text-align: center; */
+    /* background-color: aqua; */
+    padding-left: 7px;
+    color: rgba(96, 99, 101, 1);
+}
+
+.service_first_con h6::after{
+    content: "⸻";
+    font-weight: bold;
+    color: #0045BC;
+
+}
+
+.service_first_con h6::before{
+    content: "⸻";
+    font-weight: bold;
+    color: #0045BC;
+
+}
+.service_sub_con{
+    padding: 20px 0px;
+}
+.service_first_con h1{
+    color: black;
+}
+.service_first_con span{
+   color: #4b34b4;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+   
+
+
+
+}
+
+.service_type{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: white;
+    width: 360px;
+    padding: 20px 0px;
+    border-radius: 10px;
+    height: 200px;
+
+}
+.service_type h3{
+    font-size: 25px;
+    padding-top: 10px;
+
+}
+.service_type h6{
+    padding: 0px 40px;
+    color: rgba(96, 99, 101, 1);
+
+}
+
+/* .nav_top_icon{
+    color: white;
+} */
+.service_icon{
+    
+    color:white;
+    background-image: linear-gradient(#0045FF , #BD29F2 );
+    font-size: 5px;
+    /* border:2px solid rgb(247, 6, 6); */
+    height: 50px;
+    padding: 10px 0px;
+    width: 50px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 50%;
+    
+}
+.service_icon:hover{
+    background-image: linear-gradient(#fefeff , #f9f5fa );
+    /* background-image: linear-gradient(#0045FF , #BD29F2 ); */
+    color: #0045BC;
+
+}
+.service_second_con{
+    /* background-color: fuchsia; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 15px 0px;
+}
+
+
+/* hover effect */
+/* .service_type:hover{
+    background-image: linear-gradient(#0045FF , #BD29F2 );
+} */
+
+.service_type:hover .service_icon{
+    /* background-image: linear-gradient(#fefeff , #f9f5fa ); */
+    background-image: linear-gradient(#0045FF , #BD29F2 );
+    color: #0045BC;
+}
+
+.service_type:hover h3 {
+    color:white ;
+}
+
+.service_type:hover h6 {
+    color:white ;
+}
+.service_type{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.service_second_con .service_type::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:0;
+    background-image: linear-gradient(#0045FF , #BD29F2 );
+    z-index: -1;
+    transition: .5s;
+
+}
+.service_second_con .service_type:hover::before{
+    height: 100%;
+}
+
+@media screen and (min-width:300px) and (max-width:900px) {
+
+    .service_type{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        background-color: white;
+        width: 300px;
+        padding: 20px 0px;
+        border-radius: 10px;
+        height: 220px;
+    
+    }
+    .service_type h3{
+        font-size: 25px;
+        padding-top: 10px;
+    
+    }
+    .service_type h6{
+        padding: 0px 20px;
+        color: rgba(96, 99, 101, 1);
+    
+    }
+    .service_first_con h5{
+        padding-top: 10px;
+        font-size: 15px;
+        /* width:80% ; */
+        /* text-align: center; */
+        /* background-color: aqua; */
+        padding-left: 7px;
+        color: rgba(96, 99, 101, 1);
+    }
+    .service_first_con{
+        width: 90%;
+        /* background-color: rgb(17, 0, 255); */
+    }
+
+}
+/* number */
+
+.number_sub_con{
+    width: 100%;
+    /* background-color: darkred; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    background-image: url(./number.jpg)  ;
+    background-size: 100% 100%;
+    /* background: no-repeat; */
+   
+    color: white;
+   
+    
+    
+
+}
+.number_con{
+    /* background-color: darkgoldenrod; */
+    width: 100%;
+    padding-top: 30px;
+    /* background-image: url(./number.jpg);
+    background-size: 100% 300.8px; */
+
+}
+.number_one h6{
+    font-size: 15px;
+   
+}
+.number_one{
+    width: 150px;
+    padding: 10px 0px;
+}
+
+
